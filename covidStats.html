@@ -1,0 +1,94 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>Covid Stats</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+        <link rel="stylesheet" type="text/css" href="css/stats.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/c19Icon.png">
+    </head>
+
+    <body>
+        <header class="row">
+            <h1 class="col-sm-12">Covid-19 Info Page</h1>
+        </header>
+        <!-- OOOOOOOOOOOOOOOOOOOOO -->
+        <nav class="row">
+            <a href="index.html" class="col-sm-4">Start Page</a>
+            <a href="covidStats.html" class="col-sm-4" style="border: solid 6px rgb(0, 61, 110)">Covid-19 Stats</a>
+            <a href="symptoms.html" class="col-sm-4">Typical Symptoms</a>
+        </nav>
+        <!-- OOOOOOOOOOOOOOOOOOOOO -->
+        <article class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10" id="mainContent">
+                <hr>
+                <h2>Covid-19 Stats</h2>
+                <p>
+                    With this page, you can find important statistics regarding Covid-19 globally or regionally.  For the regional statistics, be sure to press the 'Show Stats' button whenever you change the selected country in the dropdown.  
+                </p>
+                <div id="globalStatistics">
+                    <h3>Global Statistics</h3>
+                    <button onclick="globalStatsReveal()">Reveal Stats</button>
+                    <div id="gStatsReveal">
+                        <hr>
+                        <p class="pHeader">Overall stats:</p>
+                        <p>Total Cases: <a id="statsCasesG"></a> </p>
+                        <p>Total Recoveries: <a id="statsRecoveriesG"></a> </p>
+                        <p>Total Deaths: <a id="statsDeathsG"></a> </p>
+                        <hr>
+                        <p class="pHeader">In the past week:</p>
+                        <p>New Cases: <a id="statsCasesGN"></a> </p>
+                        <p>New Recoveries: <a id="statsRecoveriesGN"></a> </p>
+                        <p>New Deaths: <a id="statsDeathsGN"></a> </p>
+
+                        <button onclick="globalStatsHide()">Hide Stats</button>
+                    </div>
+                </div>
+
+                <div id="regionStatistics">
+                    <h3>Regional Statistics</h3>
+                    
+                    <form>
+                        <p>Select a Country</p>
+                        <select id="country" name="Country">
+                            
+                         </select>
+                    </form>
+
+                    <button onclick="regionStatsReveal(), getCountry()">Show Stats</button>
+                    <div id="rStatsReveal">
+                        <hr>
+                        <p class="pHeader">Overall stats:</p>
+                        <p>Total Cases: <a id="statsCasesR"></a> </p>
+                        <p>Total Recoveries: <a id="statsRecoveriesR"></a> </p>
+                        <p>Total Deaths: <a id="statsDeathsR"></a> </p>
+                        <hr>
+                        <p class="pHeader">In the past week:</p>
+                        <p>New Cases: <a id="statsCasesRN"></a> </p>
+                        <p>New Recoveries: <a id="statsRecoveriesRN"></a> </p>
+                        <p>New Deaths: <a id="statsDeathsRN"></a> </p>
+
+                        <button onclick="regionStatsHide()">Hide Stats</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-1"></div>
+
+        </article>
+        <!-- OOOOOOOOOOOOOOOOOOOOO -->
+        <footer>
+            Data is obtained from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU CSSE COVID-19 Data).
+        </footer>
+
+        <script src="js/functions.js"></script>
+        <script src="js/XHR.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+#globalStatistics
+{
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: rgba(32, 90, 129, 0.9);
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+#globalStatistics > h3
+{
+    color: white;
+}
+#globalStatistics > button
+{
+    background-color: rgb(255, 255, 255);
+    border: solid 0.25em rgb(0, 132, 255);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: rgb(0, 140, 255);
+    transition: 0.2s;
+}
+#globalStatistics > button:hover
+{
+    transition: 0.2s;
+    transform: translate(0px, -5px);
+    box-shadow: 0px 5px black;
+}
+#globalStatistics > div > button
+{
+    background-color: rgb(255, 255, 255);
+    border: solid 0.25em rgb(0, 132, 255);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: rgb(0, 140, 255);
+    transition: 0.2s;
+}
+#globalStatistics > div > button:hover
+{
+    transition: 0.2s;
+    transform: translate(0px, -5px);
+    box-shadow: 0px 5px black;
+}
+#gStatsReveal
+{
+    padding: 1rem;
+    color: white;
+    display: none;
+}
+
+/* regional styles */
+#regionStatistics
+{
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: rgba(32, 90, 129, 0.9);
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+#regionStatistics > h3
+{
+    color: white;
+}
+#regionStatistics > button
+{
+    background-color: rgb(255, 255, 255);
+    border: solid 0.25em rgb(0, 132, 255);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: rgb(0, 140, 255);
+    transition: 0.2s;
+}
+#regionStatistics > button:hover
+{
+    transition: 0.2s;
+    transform: translate(0px, -5px);
+    box-shadow: 0px 5px black;
+}
+#regionStatistics > div > button
+{
+    background-color: rgb(255, 255, 255);
+    border: solid 0.25em rgb(0, 132, 255);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: rgb(0, 140, 255);
+    transition: 0.2s;
+}
+#regionStatistics > div > button:hover
+{
+    transition: 0.2s;
+    transform: translate(0px, -5px);
+    box-shadow: 0px 5px black;
+}
+#rStatsReveal
+{
+    padding: 1rem;
+    color: white;
+    display: none;
+}
+
+#regionStatistics > form > p
+{
+    margin: none;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+}
+#regionStatistics > form > select
+{
+    display: block;
+    margin-bottom: 2rem;
+    color: rgb(0, 132, 255);
+    border: solid 0.25em rgb(0, 132, 255);
+}
+.pHeader
+{
+    font-size: 1.2rem;
+}

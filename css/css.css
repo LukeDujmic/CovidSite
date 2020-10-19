@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'SCP';
+    src: url('../fonts/SourceCodePro-Regular.ttf') format('truetype');
+}
+/* scrollbar styles */
+/* width */
+::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #808080;
+    box-shadow: inset rgb(153, 223, 255) 0px 0px 0.5em;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(222, 242, 255);
+    border: solid 0.1rem rgb(0, 162, 255);
+    transition: 0.2s;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(159, 233, 255);
+    transition: 0.2s;
+  }
+/*   */
+
+body
+{
+    font-family: 'SCP', monospace;
+    overflow-x: hidden;
+}
+
+/* header styles */
+header
+{
+    box-sizing: border-box;
+    background-image: url('../images/virusBackground2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5em;
+    box-shadow: inset 0px -20px 20px rgb(0, 6, 88);
+    z-index: 4;
+}
+header > h1
+{
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    color: white;
+    text-shadow: 0px 5px rgb(0, 140, 255), 0px -5px rgb(0, 140, 255), 5px 0px rgb(0, 140, 255), -5px 0px rgb(0, 140, 255), 0px 9px rgb(0, 0, 0), 0px -9px rgb(0, 0, 0), 9px 0px rgb(0, 0, 0), -9px 0px rgb(0, 0, 0);
+}
+/* ----------------- */
+/* nav styles */
+nav
+{
+    background-color: rgb(0, 140, 255);
+    z-index: 3;
+    padding: 1em 0;
+}
+nav > a
+{
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid rgb(0, 140, 255);
+    border-radius: 0.5em;
+    background-color: white;
+    z-index: 3;
+    font-size: 3rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+nav > a:hover
+{
+    transform: translate(0px, -10px);
+    box-shadow: 0px 10px black;
+    background-color: rgb(176, 213, 255);
+    text-decoration: none;
+    text-shadow: 0px 0px 5px white;
+    transition: 0.3s;
+}
+/* ----------------- */
+/* article styles */
+article
+{
+    box-sizing: border-box;
+    background-image: url('../images/virusBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+article > div > h2
+{
+    font-size: 3rem;
+    background-color: rgba(42, 111, 168, 0.795);
+    border-radius: 100rem;
+    text-indent: 1rem;
+    color: white;
+}
+article > div > p
+{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-indent: 3rem;
+    padding: 1.5rem;
+}
+#mainContent
+{
+    background-color: rgba(0, 140, 255, 0.9);
+    box-sizing: border-box;
+    padding-bottom: 2rem;
+}
+#mainContent > hr
+{
+    height: 1rem;
+    background-color: white;
+}
+
+ul > li
+{
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+/* ----------------- */
+/* footer styles */
+footer
+{
+    background-color: rgb(23, 76, 114);
+    color: white;
+    padding: 2rem;
+    font-size: 2rem;
+}
+/* ----------------- */
