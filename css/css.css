@@ -10,14 +10,14 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #808080;
-    box-shadow: inset rgb(153, 223, 255) 0px 0px 0.5em;
+    background: #789da8;
+    box-shadow: inset rgb(29, 45, 53) 0px 0px 0.5em;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: rgb(222, 242, 255);
-    border: solid 0.1rem rgb(0, 162, 255);
+    border: solid 0.2rem rgb(0, 162, 255);
     transition: 0.2s;
   }
   
@@ -90,6 +90,7 @@ article
     background-image: url('../images/virusBackground.png');
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 article > div > h2
 {
@@ -105,17 +106,20 @@ article > div > p
     line-height: 3rem;
     text-indent: 3rem;
     padding: 1.5rem;
+    text-shadow: rgba(255, 255, 255, 0.33) 0px 2px;
 }
 #mainContent
 {
     background-color: rgba(0, 140, 255, 0.9);
     box-sizing: border-box;
     padding-bottom: 2rem;
+    box-shadow: rgba(255, 255, 255, 0.527) -13px 0px 10px -10px, rgba(255, 255, 255, 0.527) 13px 0px 10px -10px;
 }
 #mainContent > hr
 {
     height: 1rem;
-    background-color: white;
+    background-color: rgb(38, 116, 168);
+    box-shadow: rgb(15, 64, 73) 0px 6px;
 }
 
 ul > li
@@ -123,6 +127,8 @@ ul > li
     font-size: 1.25rem;
     margin: 1rem 0;
 }
+
+
 /* ----------------- */
 /* footer styles */
 footer

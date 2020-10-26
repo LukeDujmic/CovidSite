@@ -47,6 +47,7 @@
     display: none;
 }
 
+
 /* regional styles */
 #regionStatistics
 {
@@ -55,6 +56,7 @@
     background-color: rgba(32, 90, 129, 0.9);
     padding: 1rem;
     margin-bottom: 3rem;
+    transition: 0.2s;
 }
 #regionStatistics > h3
 {
@@ -95,6 +97,11 @@
     padding: 1rem;
     color: white;
     display: none;
+    transition: 0.2s;
+}
+#rStatsReveal > p
+{
+    transition: 0.2s;
 }
 
 #regionStatistics > form > p
@@ -109,8 +116,37 @@
     margin-bottom: 2rem;
     color: rgb(0, 132, 255);
     border: solid 0.25em rgb(0, 132, 255);
+    transition: 0.3s;
 }
 .pHeader
 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
+
+#regionStatistics > form > select:hover
+{
+    box-shadow: white 0px 0px 5px;
+    transition: 0.3s;
+}
+
+#regionStatistics > form > select > option
+{
+    text-shadow: 0px 0px 2px black;
+    font-size: 1em;
+    transition: 0.2s;
+}
+
+
+#gStatsReveal > hr
+{
+    height: 0.5rem;
+    background-color: rgb(38, 142, 168);
+    box-shadow: rgb(15, 64, 73) 0px 3px;
+}
+#rStatsReveal > hr
+{
+    height: 0.5rem;
+    background-color: rgb(38, 142, 168);
+    box-shadow: rgb(15, 64, 73) 0px 3px;
+}
+
